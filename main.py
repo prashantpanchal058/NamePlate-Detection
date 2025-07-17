@@ -8,7 +8,7 @@ import tempfile
 app = FastAPI()
 
 # Load YOLOv8 model
-model = YOLO("train20/weights/best.pt")
+model = YOLO("best.pt")
 
 # Initialize EasyOCR
 reader = easyocr.Reader(['en'], gpu=False)
